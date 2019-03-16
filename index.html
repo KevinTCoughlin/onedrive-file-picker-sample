@@ -1,41 +1,34 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
 <!doctype html>
-<html class="no-js" lang="">
-
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>OneDrive File Picker | Pick Embed Demo</title>
+  <meta name="description" content="Sample demonstrating usage of the OneDrive File Picker to select file(s) to embed preview.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
-
-<body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<body class="ms-Fabric" dir="ltr">
+  <main class="app">
+    <h1 class="ms-font-su ms-fontColor-themePrimary">OneDrive File Picker</h1>
+    <button id="launchPicker">Select a file</button>
+    <iframe id="embed"></iframe>
+    <footer>
+      <ul>
+        <li><a href="https://docs.microsoft.com/en-us/onedrive/developer/controls/file-pickers/js-v72/?view=odsp-graph-online" target="_blank">Getting Started Documentation</a></li>
+        <li><a href="https://github.com/OneDrive/onedrive-api-docs/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%3Apicker" target="_blank">Report File Picker Issues</a></li>
+      </ul>
+    </footer>
+  </main>
+  <script src="http://js.live.net/v7.2/OneDrive.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
-
 </html>
