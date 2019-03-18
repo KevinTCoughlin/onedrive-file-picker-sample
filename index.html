@@ -25,16 +25,19 @@
 <body class="ms-Fabric" dir="ltr">
   <main class="app">
     <h1 class="ms-font-su ms-fontColor-themePrimary">OneDrive File Picker</h1>
+    <p>This web app demonstrates using the <a href="https://docs.microsoft.com/en-us/onedrive/developer/controls/file-pickers/js-v72/?view=odsp-graph-online" target="_blank">OneDrive File Picker</a> to select an individual file to preview from a SharePoint / OneDrive for Business document library.</p>
+    <p><b>Follow these steps to preview a file:</b></p>
+    <ol>
+      <li>Click the "Select a file" button to launch the File Picker</li>
+      <li>Login with a SharePoint / OneDrive for Business account</li>
+      <li>If prompted, consent to the OAuth permissions for the application</li>
+      <li>Once logged-in, a document library for your account will be shown</li>
+      <li>Select a file that you wish to preview by clicking it, then the "Open" button</li>
+    </ol>
     <button id="launchPicker">Select a file</button>
-    <iframe id="embed"></iframe>
-    <footer>
-      <ul>
-        <li><a href="https://docs.microsoft.com/en-us/onedrive/developer/controls/file-pickers/js-v72/?view=odsp-graph-online" target="_blank">Getting Started Documentation</a></li>
-        <li><a href="https://github.com/OneDrive/onedrive-api-docs/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%3Apicker" target="_blank">Report File Picker Issues</a></li>
-      </ul>
-    </footer>
+    <iframe id="embed" height="500" width="500" frameborder="0"></iframe>
   </main>
-  <script src="http://js.live.net/v7.2/OneDrive.js"></script>
+  <script src="https://js.live.net/v7.2/OneDrive.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/main.js"></script>

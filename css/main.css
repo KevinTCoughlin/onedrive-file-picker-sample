@@ -9,3 +9,16 @@ html, body {
     align-items: center;
     vertical-align: middle;
 }
+
+#launchPicker {
+    border: none;
+    background-color: #0078D4;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+iframe {
+    margin-top: 16px;
+}

@@ -17,8 +17,7 @@ $(function () {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${accessToken}`
-            },
-            // body: JSON.stringify(data),
+            }
         })
         .then(response => response.json());
     }
